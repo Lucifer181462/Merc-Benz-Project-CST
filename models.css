@@ -1,0 +1,208 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #050608;
+      color: #f5f5f5;
+    }
+
+    .mb-nav {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 72px;
+      padding: 0 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(0, 0, 0, 0.95);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(16px);
+      z-index: 100;
+    }
+
+    .mb-nav-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mb-brand-name {
+      font-size: 1rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .mb-nav-links {
+      display: flex;
+      gap: 24px;
+      font-size: 0.9rem;
+    }
+
+    .mb-nav-links a {
+      text-decoration: none;
+      color: #d4d4d4;
+      position: relative;
+      padding-bottom: 3px;
+    }
+
+    .mb-nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: #ffffff;
+      transition: width 0.2s ease;
+    }
+
+    .mb-nav-links a:hover::after,
+    .mb-nav-links a.active::after {
+      width: 100%;
+    }
+
+    .mb-nav-links a:hover,
+    .mb-nav-links a.active {
+      color: #ffffff;
+    }
+
+    .mb-nav-cta {
+      padding: 8px 18px;
+      border-radius: 999px;
+      border: 1px solid #ffffff;
+      text-decoration: none;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #ffffff;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+    .mb-nav-cta:hover {
+      background: #ffffff;
+      color: #000;
+      transform: translateY(-1px);
+    }
+
+    main {
+      padding: 4rem 8vw 5rem;
+    }
+
+    .models-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .models-title {
+      font-size: 2.4rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .models-subtitle {
+      max-width: 420px;
+      font-size: 0.95rem;
+      color: #c4c7d3;
+    }
+
+    .models-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.8rem;
+    }
+
+    .model-card {
+      background: #0b0e13;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 1.4rem 1.4rem 1.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      opacity: 0;
+      transform: translateY(30px);
+      overflow: hidden;
+    }
+
+    .model-image-wrapper {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      background: radial-gradient(circle at top, #151924, #050608);
+    }
+
+    .model-image-wrapper img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .model-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .model-card:hover .model-image-wrapper img {
+      transform: scale(1.05);
+    }
+
+    .model-name {
+      font-size: 1.1rem;
+    }
+
+    .model-specs {
+      font-size: 0.85rem;
+      color: #aeb3c3;
+      line-height: 1.6;
+    }
+
+    .model-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: #c1c4d0;
+    }
+
+    .model-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.4rem;
+    }
+
+    .model-link {
+      font-size: 0.82rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #ffffff;
+      padding-bottom: 2px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .model-price {
+      font-size: 0.85rem;
+      color: #e3e6f0;
+    }
+
+img{
+    background-color: white;
+}

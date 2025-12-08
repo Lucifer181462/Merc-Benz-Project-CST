@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mercedes-Benz | Models</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <link rel="stylesheet" href="models.css">
+</head>
+<body>
+
+  <header class="mb-nav">
+    <div class="mb-nav-left">
+      <span class="mb-brand-name">Mercedes-Benz</span>
+    </div>
+    <nav class="mb-nav-links">
+      <a href="index.html">Home</a>
+      <a href="models.html" class="active">Models</a>
+      <a href="#buy">Buy</a>
+      <a href="#services">Services</a>
+      <a href="#brand">Brand</a>
+    </nav>
+    <a href="#test-drive" class="mb-nav-cta">Book Test Drive</a>
+  </header>
+
+  <main>
+    <section class="models-header">
+      <div>
+        <h1 class="models-title">Models</h1>
+      </div>
+      <p class="models-subtitle">
+        From compact city cars to commanding SUVs, each Mercedes-Benz model blends innovation, performance and comfort into a single experience.
+      </p>
+    </section>
+
+    <section class="models-grid">
+      <article class="model-card">
+        <div class="model-image-wrapper">
+         
+          <img src="Assets/card01.avif" alt="A-Class" />
+        </div>
+        <h3 class="model-name">A-Class</h3>
+        <p class="model-specs">
+          Agile proportions, digital cockpit and intelligent assistance systems designed for urban life.
+        </p>
+        <div class="model-meta">
+          <span>Petrol / Diesel</span>
+          <span>Up to 165 kW</span>
+        </div>
+        <div class="model-actions">
+          <a href="#" class="model-link">Explore</a>
+          <span class="model-price">From ₹X.X Cr*</span>
+        </div>
+      </article>
+
+      <article class="model-card">
+        <div class="model-image-wrapper">
+      
+           <img src="Assets/card02.avif" alt="A-Class" />
+        </div>
+        <h3 class="model-name">C-Class</h3>
+        <p class="model-specs">
+          Classic sedan elegance with progressive technology and dynamic driving characteristics.
+        </p>
+        <div class="model-meta">
+          <span>Petrol / Diesel</span>
+          <span>Up to 190 kW</span>
+        </div>
+        <div class="model-actions">
+          <a href="#" class="model-link">Explore</a>
+          <span class="model-price">From ₹X.X Cr*</span>
+        </div>
+      </article>
+
+      <article class="model-card">
+        <div class="model-image-wrapper">
+ 
+           <img src="Assets/card03.avif" alt="A-Class" />
+        </div>
+        <h3 class="model-name">E-Class</h3>
+        <p class="model-specs">
+          Executive comfort, long-distance refinement and intelligent driver assistance at scale.
+        </p>
+        <div class="model-meta">
+          <span>Petrol / Diesel</span>
+          <span>Up to 210 kW</span>
+        </div>
+        <div class="model-actions">
+          <a href="#" class="model-link">Explore</a>
+          <span class="model-price">From ₹X.X Cr*</span>
+        </div>
+      </article>
+
+      <article class="model-card">
+        <div class="model-image-wrapper">
+
+           <img src="Assets/card04.avif" alt="A-Class" />
+        </div>
+        <h3 class="model-name">G-Class</h3>
+        <p class="model-specs">
+          Benchmark luxury with serene ride comfort, next-gen infotainment and craftsmanship in every detail.
+        </p>
+        <div class="model-meta">
+          <span>Hybrid / Petrol</span>
+          <span>Up to 270 kW</span>
+        </div>
+        <div class="model-actions">
+          <a href="#" class="model-link">Explore</a>
+          <span class="model-price">From ₹X.X Cr*</span>
+        </div>
+      </article>
+
+     
+      </article>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      anime({
+        targets: ".model-card",
+        opacity: [0, 1],
+        translateY: [30, 0],
+        easing: "easeOutExpo",
+        duration: 900,
+        delay: anime.stagger(120)
+      });
+    });
+
+    
+
+
+  </script>
+</body>
+</html>
